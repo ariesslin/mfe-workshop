@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
 import Catalog from '@mfe-patterns/catalog';
+import Cart from '@mfe-patterns/cart';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
@@ -41,6 +42,7 @@ export default () => {
       <hr />
 
       <Switch>
+        <Route path="/cart" component={Cart} />
         <Route path="/" component={Catalog} />
       </Switch>
 
